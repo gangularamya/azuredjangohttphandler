@@ -26,8 +26,6 @@ SECRET_KEY = 'i1l0q2_$4#5i+1@oow&^5k827$1in85bqmg9-pn6d58w)divq8'
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
-PYINSTRUMENT_PROFILE_DIR = 'profiles'
-PYINSTRUMENT_USE_SIGNAL = False
 
 
 # Application definition
