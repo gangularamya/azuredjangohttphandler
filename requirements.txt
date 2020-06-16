@@ -1,3 +1,4 @@
 django
 waitress
 pyinstrument
+django-silk

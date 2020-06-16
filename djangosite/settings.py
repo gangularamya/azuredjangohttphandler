@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'silk',
 ]
 
 MIDDLEWARE = [
@@ -48,6 +49,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'pyinstrument.middleware.ProfilerMiddleware',
+     'silk.middleware.SilkyMiddleware',
 ]
 
 ROOT_URLCONF = 'djangosite.urls'
@@ -114,7 +116,13 @@ USE_L10N = True
 
 USE_TZ = True
 
+STATIC_ROOT = os.path.join(BASE_DIR, "static")
 
+#before you change this make sure to create a folder "static" in project directory, otherwise it will throw an error.
+
+# STATICFILES_DIRS = [
+#         os.path.join(BASE_DIR, 'static'),
+#         ]
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
